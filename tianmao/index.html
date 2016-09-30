@@ -1,0 +1,3066 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <meta charset="utf-8">
+  <title> 天猫主页 </title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+ </head>
+ <body>
+<!-- <script type="text/javascript" src="js/function.js"></script>
+ <script type="text/javascript" src="js/functions.js"></script>
+ <script type="text/javascript" src="js/animate.js"></script>
+ <script type="text/javascript" src="js/base.js"></script>-->
+ <script src="js/jquery-1.11.2.js"></script>
+ <script src="js/index.js"></script>
+    <!-- $ top 开始 -->
+     <div class="top-title">
+	<div class="top-title-inner">
+	  <div class="top-title-left">
+		  <span>喵，欢迎来天猫</span>
+		  <a href="#">请登录</a>
+		  <a href="#">免费注册</a>
+	  </div>
+	  <ul class="top-title-right">
+			  <li class="tmb">
+					<img src="images/tmb.jpg"><a href="#">天猫宝</a></li>
+			  <li class="my has-hidden" hideId='hide1'>
+			   <a href="#">我的淘宝</a>
+			       <div class="xiaosanjiao img1"><img class='xsj' src="images/00.png"></div>
+				  <div class="wdtb" id='hide1'>
+				    <div><a>已买到的宝贝</a></div>
+				    <div><a>已卖出的宝贝</a></div>
+				  </div>
+			  
+			  </li>
+			  <li class="like"><img src="images/xin1.jpg"><a href="#">我关注的品牌</a></li>
+			  <li class="car"><img src="images/car.jpg"><a href="#">购物车0件</a></li>
+			  <li class="scj has-hidden" hideId='hide2'><a href="#">收藏夹
+			      <div class="xiaosanjiao img2"><img class='xsj' src="images/00.png"></div>
+				  <div class="sc liy" id='hide2'>
+						<div><a>收藏的宝贝</a></div>
+						<div><a>收藏的店铺</a></div>
+				  </div>
+			  </a></li>
+
+			  <li class="phone"><img src="images/phone.jpg"><a href="#">手机版</a></li>
+			  <li class="tbw"><a href="#">淘宝网</a></li>
+			  <li class="sale has-hidden" hideId='hide3'><div class="sale1" href="#">商家支持
+			      <div class="xiaosanjiao img3"><img class='xsj' src="images/00.png"></div>
+				  <div class="sjzc liy" id='hide3'>
+				  <ul>
+				  <li>
+				  <h3>商家:</h3>
+				  <a href="#">商家中心</a>
+				  <a href="#">商家入驻</a>
+				  <a href="#">运营服务</a>
+				  <a href="#">商家品控</a>
+				  <a href="#">商家工具</a>
+				  <a href="#">商家规则</a>
+				  <a href="#">天猫智库</a>
+				  <a href="#">喵言喵语</a>
+				  </li>
+				  <li class="bz">
+				  <h3>帮助:</h3>
+				  <a href="#">帮助中心</a>
+				  </li>
+				  </ul>
+				  </div>
+			  </div></li>
+			  <li class="wz has-hidden" hideId='hide4'><img src="images/wz.jpg">
+			  <div class="wzdh" href="#">网站导航
+			      <div class="xiaosanjiao img4"><img class='xsj' src="images/00.png"></div>
+				  <div class="wz-menu liy" id='hide4'>
+				      <!-- ************************************* -->
+					  <div class="site-hot">
+					  <h2>热点推荐<span>Hot</span></h2>
+					  <ul class="site-hot-list">
+					  <li><a href="#">天猫超市</a></li>
+					  <li><a href="#">喵鲜生</a></li>
+					  <li><a href="#">科技新品</a></li>
+					  <li><a href="#">女装新品</a></li>
+					  <li><a href="#">酷玩街</a></li>
+					  <li><a href="#">内衣新品</a></li>
+					  <li><a href="#">试美妆</a></li>
+					  <li><a href="#">运动新品</a></li>
+					  <li><a href="#">时尚先生</a></li>
+					  <li><a href="#">户外名品</a></li>
+					  <li><a href="#">精明妈咪</a></li>
+					  <li><a href="#">吃乐会</a></li>
+					  <li><a href="#">关爱长辈</a></li>
+					  <li><a href="#">会员积分</a></li>
+					  <li><a href="#">天猫国际</a></li>
+					  </ul>
+					  </div>
+					  <!-- ************************************* -->
+					  <div class="site-market">
+					  <h2>行业市场<span>Market</span></h2>
+					  <ul class="site-market-list">
+					  <li><a href="#">美妆</a></li>
+					  <li><a href="#">电器</a></li>
+					  <li><a href="#">女装</a></li>
+					  <li><a href="#">男装</a></li>
+					  <li><a href="#">女鞋</a></li>
+					  <li><a href="#">男鞋</a></li>
+					  <li><a href="#">内衣</a></li>
+					  <li><a href="#">箱包</a></li>
+					  <li><a href="#">运动</a></li>
+					  <li><a href="#">户外</a></li>
+					  <li><a href="#">母婴</a></li>
+					  <li><a href="#">家装</a></li>
+					  <li><a href="#">医药</a></li>
+					  <li><a href="#">食品</a></li>
+					  <li><a href="#">配饰</a></li>
+					  <li><a href="#">汽车</a></li>
+					  </ul>
+					  </div>
+					  <!-- ************************************* -->
+					  <div class="site-brand">
+					  <h2>品牌风尚<span>Brand<span></h2>
+					  <ul class="site-brand-list">
+					  <li><a href="#">大牌街</a></li>
+					  <li><a href="#">潮牌街</a></li>
+					  <li><a href="#">天猫原创</a></li>
+					  <li><a href="#">今日最大牌</a></li>
+					  <li><a href="#">一周新发现</a></li>
+					  <li><a href="#">全球至尚</a></li>
+					  </ul>
+					  </div>
+					   <!-- ************************************* -->
+					  <div class="site-help">
+					  <h2>服务指南<span>Help</span></h2>
+					  <ul class="site-help-list">
+					  <li><a href="#">帮助中心</a></li>
+					  <li><a href="#">品质保障</a></li>
+					  <li><a href="#">特色服务</a></li>
+					  <li><a href="#">7天退换货</a></li>
+					  </ul>
+					  </div>
+				  </div>
+			  </div>
+			  </li>
+	  </ul>
+	 </div>
+  </div>
+     <!--  top 结束 -->
+     <!-- $ logo-box 开始 -->
+     <div class="logo-box">
+	  <div class="logo-box-top">
+			  <a class="logo" href="#"><img src="images/logo.jpg"></a>
+			  <div class="logo-search">
+			  <div class="logo-s-1">
+			  <input type="text" value="一样的吃货！不一样的年货大礼包！">
+			  <a class="sspic" href="#"><img src="images/search.jpg"></a>
+	          </div>
+			  <div class="logo-s-2">
+			  <a href="#">连衣裙</a> | <a class="dsj" href="#">电视机</a> | <a href="#">针织衫</a> | <a href="#">老人机</a> | <a href="#">红酒</a> | <a href="#">男士外套</a> | <a href="#">移动电源</a> | <a class="qrj" href="#">情人节</a>
+			  </div>
+			  </div>
+	  </div>
+ </div>
+	 <!--  logo-box 结束 -->
+	 <!-- $ nav-box 开始 -->
+	 <div class="nav-box">
+		 <h2 class="nav-box-left">商品服务分类</h2>
+		 <ul class="nav-box-right">
+			    <a class="dh" href="#"><img src="images/1.gif"></a>
+				<a href="#">喵鲜生</a>
+				<a href="#">天猫会员</a>
+				<a href="#">电器城</a>
+				<a href="#">天猫超市</a>
+				<a href="#">医药馆</a>
+				<a href="#">阿里旅行</a>
+				<a href="#">天猫国际</a>
+		 </ul>
+	 </div>
+	 <!--  nav-box 结束 -->
+	 <!-- $ banner-box 开始 -->
+ 	<div class='banner'>
+	 <div class="banner-box">
+		 <ul class="banner-box-list1" id='ul'>
+			 <li class='li'><img src="images/1.jpg">
+			     <div class="all" href="#">精选市场			    	 
+					 <ul class="banner-box-list2 yc1">
+					 <li><a href="#">女装</a></li>
+					 <li><a href="#">男装</a></li>
+					 <li><a href="#">电器</a></li>
+					 <li><a href="#">男鞋</a></li>
+					 <li><a href="#">女鞋</a></li>
+					 <li><a href="#">箱包</a></li>
+					 <li><a href="#">运动</a></li>
+					 <li><a href="#">家装</a></li>
+					 <li><a href="#">母婴</a></li>
+					 <li><a href="#">医药</a></li>
+					 <li><a href="#">家居</a></li>
+					 <li><a href="#">大家电</a></li>
+					 </ul>
+			     </div>
+			     <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/2.jpg">
+			     <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+				 <div class="all" href="#">女装</div>
+				 <span>/</span>
+				 <div class="all" href="#">内衣</div>
+				 <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/3.jpg">
+				 <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+				 <div class="all" href="#">男装</div>
+				 <span>/</span>
+				 <div class="all" href="#">运动户外</div>
+				 <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/4.jpg">
+				 <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+				 <div class="all" href="#">女鞋</div>
+				 <span>/</span>
+				 <div class="all" href="#">男鞋</div>
+				 <span>/</span>
+				 <div class="all" href="#">箱包</div>
+				 <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/5.jpg">
+				 <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+				 <div class="all" href="#">化妆品</div>
+				 <span>/</span>
+				 <div class="all" href="#">个人护理</div>
+				 <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/6.jpg">
+				 <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+				 <div class="all" href="#">手机</div>
+				 <span>/</span>
+				 <div class="all" href="#">数码</div>
+				 <span>/</span>
+				 <div class="all" href="#">电脑办公</div>
+				 <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/7.jpg">
+			     <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+			     <div class="all" href="#">母婴玩具</div>
+			     <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/8.jpg">
+				 <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+				 <div class="all" href="#">零食</div>
+				 <span>/</span>
+				 <div class="all" href="#">进口产品</div>
+				 <span>/</span>
+				 <div class="all" href="#">酒</div>
+				 <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/9.jpg">
+			     <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+				 <div class="all" href="#">大家电</div>
+				 <span>/</span>
+				 <div class="all" href="#">生活电器</div>
+				 <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/10.jpg">
+				 <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+			     <div class="all" href="#">家具器材</div>
+			     <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/11.jpg">
+				 <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+				 <div class="all" href="#">珠宝饰品</div>
+				 <span>/</span>
+				 <div class="all" href="#">腕表眼镜</div>
+				 <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/12.jpg">
+				 <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+				 <div class="all" href="#">汽车</div>
+				 <span>/</span>
+				 <div class="all" href="#">配件</div>
+				 <span>/</span>
+				 <div class="all" href="#">用品</div>
+				 <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/13.jpg">
+				 <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+				 <div class="all" href="#">家纺</div>
+				 <span>/</span>
+				 <div class="all" href="#">家饰</div>
+				 <span>/</span>
+				 <div class="all" href="#">鲜花</div>
+				 <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/14.jpg">
+			     <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+			     <div class="all" href="#">医疗保健</div>
+			     <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/15.jpg">
+			     <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+				 <div class="all" href="#">厨房</div>
+				 <span>/</span>
+				 <div class="all" href="#">收纳</div>
+				 <span>/</span>
+				 <div class="all" href="#">宠物</div>
+				 <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>
+			 <li class='li'><img src="images/16.jpg">
+			     <div class="nz-menu yc1">
+						 <!-- ********************************* -->
+						 <div class="nz-menu-1">
+						 <h3>
+						 <a class="jpnz" href="#"><img src="images/jpnz.jpg">精品男装</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list1">
+						 <a href="#">2015春季新品</a> |
+						 <a href="#">商场同款</a> |
+						 <a href="#">男装集结</a> |
+						 <a href="#">送爸爸</a> |
+						 <a href="#">衬衫</a> |
+						 <a href="#">牛仔衬衫</a> |
+						 <a href="#">印花衬衫</a> |
+						 <a href="#">长袖T恤</a> |
+						 <a href="#">休闲裤</a> |
+						 <a href="#">小脚裤</a> |
+						 <a href="#">卡其裤</a> |
+						 <a href="#">牛仔裤</a> |
+						 <a href="#">补丁牛仔裤</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">西服单件</a> |
+						 <a href="#">西服套装</a> |
+						 <a href="#">针织衫</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">棉服</a> |
+						 <a href="#">大衣</a> |
+						 <a href="#">皮衣</a> |
+						 <a href="#">毛衣</a> |
+						 <a href="#">羊绒</a>
+						 </p>
+						 </div>
+						 <!-- ********************************* -->
+						 <div class="nz-menu-2">
+						 <h3>
+						 <a class="hwsport" href="#"><img src="images/sport.jpg">运动/户外鞋服</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list2">
+						 <a href="#">运动鞋服</a>|
+						 <a href="#">跑步鞋</a> |
+						 <a href="#">板鞋</a> |
+						 <a href="#">篮球鞋</a>|
+						 <a href="#">足球鞋</a> |
+						 <a href="#">网羽鞋</a> |
+						 <a href="#">T恤</a>|
+						 <a href="#">综训鞋</a> |
+						 <a href="#">帆布鞋</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">夹克</a> |
+						 <a href="#">卫衣</a> |
+						 <a href="#">运动裤</a> |
+						 <a href="#">套装</a> |
+						 <a href="#">户外鞋服</a> |
+						 <a href="#">冲锋衣</a> |
+						 <a href="#">抓绒衣</a> |
+						 <a href="#">速干衣</a> |
+						 <a href="#">羽绒服</a> |
+						 <a href="#">滑雪服</a> |
+						 <a href="#">休闲服</a> |
+						 <a href="#">军迷服</a> |
+						 <a href="#">风衣</a> |
+						 <a href="#">登山鞋</a> |
+						 <a href="#">徒步鞋</a> |
+						 <a href="#">休闲鞋</a> |
+						 <a href="#">溯溪鞋</a> |
+						 <a href="#">越野跑鞋</a>
+						 </p>
+						 </div>
+						  <!-- ********************************* -->
+						 <div class="nz-menu-3">
+						 <h3>
+						 <a class="hwyp" href="#"><img src="images/hwyd1.jpg">运动/户外用品</a>
+						 <a href="#">更多&gt;</a>
+						 </h3>
+						 <p class="nz-menu-list3">
+						 <a href="#">运动用品</a> |
+						 <a href="#">跑步机</a>|
+						 <a href="#">健身车</a>|
+						 <a href="#">游泳</a> |
+						 <a href="#">轮滑</a>|
+						 <a href="#">羽毛球</a> |
+						 <a href="#">瑜伽</a> |
+						 <a href="#">舞蹈</a> |
+						 <a href="#">跆拳道</a>|
+						 <a href="#">乒乓球</a>|
+						 <a href="#">篮球</a> |
+						 <a href="#">麻将桌游</a> |
+						 <a href="#">电动车</a> |
+						 <a href="#">护具</a> |
+						 <a href="#">户外用品</a> |
+						 <a href="#">自行车</a>|
+						 <a href="#">垂钓用品</a> |
+						 <a href="#">滑雪</a>|
+						 <a href="#">攀岩</a> |
+						 <a href="#">军迷装备</a>|
+						 <a href="#">背包</a>|
+						 <a href="#">野餐烧烤</a>|
+						 <a href="#">睡袋吊床</a> |
+						 <a href="#">帐篷垫子</a> |
+						 <a href="#">照明</a> |
+						 <a href="#">望远镜</a>|
+						 <a href="#">户外表</a> |
+						 <a href="#">户外配饰</a>
+						 </p>
+						 </div>
+				 </div>
+			     <div class="all" href="#">图书音像</div>
+			     <div class='yousanjiao'><img src='images/01.jpg'></div>
+			 </li>	 
+		 </ul>
+		 <div class="banner2">
+		     <li class="lit"><a href="#">
+				<div class='bx' style="display:block">
+					 <div id='zanshi'>
+					 	<div class='tupianjihe'>
+						 	<div><a href="javascript:void(0);"><img
+						 	class='tupianall' src="images/banner1 (2).jpg"></a></div>
+							<div><a href="javascript:void(0);"><img class='tupianall' src="images/banner1.jpg"></a></div>
+							<div><a href="javascript:void(0);"><img class='tupianall' src="images/banner10.jpg">
+							</a></div>
+							<div><a href="javascript:void(0);"><img class='tupianall' src="images/banner14.jpg">
+							</a></div>
+							<div><a href="javascript:void(0);"><img class='tupianall' src="images/banner4.jpg">
+							</a></div>
+					    </div> 
+					    <div>
+					 </div>
+					 <ul class='xiaodianjihe'>
+					    	 <li class='xiaodian'>1</li>
+					    	 <li class='xiaodian'>2</li>
+					    	 <li class='xiaodian'>3</li>
+					    	 <li class='xiaodian'>4</li>
+					    	 <li class='xiaodian'>5</li>
+					</ul>
+			    </div>
+         </a>
+         </li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner2.jpg"></a></li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner3.jpg"></a></li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner4.jpg"></a></li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner5.jpg"></a></li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner6.jpg"></a></li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner7.jpg"></a></li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner8.jpg"></a></li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner9.jpg"></a></li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner10.jpg"></a></li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner11.jpg"></a></li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner12.jpg"></a></li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner13.jpg"></a></li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner14.jpg"></a></li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner15.jpg"></a></li>
+			<li class="lit"><a href="#"><img class='bx' src="images/banner16.jpg"></a></li>
+		 </div>
+		 <ul class="banner-box-list3">
+			 <li class="brl">
+			 <a href="#"><img style="display:block" src="images/b-r1.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r2.jpg"></a>
+			 <a href="#"><img src="images/b-r3.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r4.jpg"></a>
+			 <a href="#"><img src="images/b-r5.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r2.jpg"></a>
+			 <a href="#"><img src="images/b-r3.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r4.jpg"></a>
+			 <a href="#"><img src="images/b-r5.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r2.jpg"></a>
+			 <a href="#"><img src="images/b-r3.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r4.jpg"></a>
+			 <a href="#"><img src="images/b-r5.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r2.jpg"></a>
+			 <a href="#"><img src="images/b-r3.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r4.jpg"></a>
+			 <a href="#"><img src="images/b-r5.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r2.jpg"></a>
+			 <a href="#"><img src="images/b-r3.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r4.jpg"></a>
+			 <a href="#"><img src="images/b-r5.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r2.jpg"></a>
+			 <a href="#"><img src="images/b-r3.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r4.jpg"></a>
+			 <a href="#"><img src="images/b-r5.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r2.jpg"></a>
+			 <a href="#"><img src="images/b-r3.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r4.jpg"></a>
+			 <a href="#"><img src="images/b-r5.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r2.jpg"></a>
+			 <a href="#"><img src="images/b-r3.jpg"></a>
+			 </li>
+			 <li class="brl">
+			 <a href="#"><img src="images/b-r4.jpg"></a>
+			 <a href="#"><img src="images/b-r5.jpg"></a>
+			 </li><li class="brl">
+			 <a href="#"><img src="images/b-r2.jpg"></a>
+			 <a href="#"><img src="images/b-r3.jpg"></a>
+			 </li>
+		 </ul>
+	 </div>
+ </div>
+	 <!-- banner-box 结束 -->
+	 <!-- $ 热门品牌 开始 -->
+	 <div class="brand">
+        <div class="brand-top">
+            <a class="brand-top-icon" href="javascript:;">
+                <img src="images/rm.jpg">
+            </a>
+            <div class="brand-top-title">
+                <div class="brand-title-link">
+                    <a href="javascript:;">国际大牌</a>
+                    <a href="javascript:;">时尚潮牌</a>
+                    <a href="javascript:;">国内名牌</a>
+                    <a href="javascript:;">天猫原创</a>
+                </div>
+                <div class="brand-title-more">
+                    <a class='more' href="javascript:;">换一批</a>
+                    <a href="javascript:;">品牌库 </a>
+                </div>
+            </div>
+        </div>
+        <div class="brand-bottom">
+            <div class="brand-bottom-left">
+                <a id='imgl-1' href="javascript:;">
+                    <img src="images/hot1.jpg">
+                </a>
+                <div class="hot-img-list-1">
+                    <div class='hot-img2'><img src="images/p1.jpg"></div>
+                    <div class="hot-img2"><img src="images/p2.jpg"></div>
+                    <div class="hot-img2"><img src="images/p4.jpg"></div>
+                </div>
+            </div>
+            <div class="brand-bottom-center">
+                <div class="img-list"></div>
+                <div class="img-list"></div>
+                <div class="img-list"></div>
+                <div class="img-list"></div>
+            </div>
+            <div class="brand-bottom-right">
+                <a href="javascript:;">
+                    <img style="height:326px" src="images/hot2.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+	 <!--  热门品牌 结束 -->
+	 <div class="banner4">
+		 <a href="#">
+			 <img src="images/ba4.jpg">
+		 </a>
+	 </div>
+	 <!-- $ 1F 开始 -->
+	 <div class="floor-box1 floor">
+		 <div class="floor-box1-left">
+				<div class="floor-b1-l1">
+					<a class="nz" href="#">
+					<span class="nzpic"><img src="images/nzpic.jpg"></span>
+					<span class="nzwz">女装</span>
+					</a>
+					<div class="line"></div>
+					<a class="ny" href="#">
+					<span class="nypic"><img src="images/nypic.jpg"></span>
+					<span class="nywz">内衣</span>
+					</a>
+				</div>
+				<div class="loucengzhanshi">
+					<span class='qian'>&lt;</span>
+					<span class='hou'>&gt;</span>
+		            <div class="louceng">
+						<div class="loucengjihe">
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-2.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-3.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-11.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-12.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-13.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-14.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-15.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-16.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-17.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-18.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-3.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-13.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-15.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-17.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-2.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-3.jpg'></a>
+							</p>
+						</div>	
+		            </div>
+                </div>
+				<ul class="floor-b1-l3">
+					<li><a href="#">热卖羽绒</a><a href="#">潮流女装</a></li>
+					<li><a href="#">时尚新品</a><a href="#">商场同款</a></li>
+					<li><a href="#">毛呢外套</a><a href="#">潮流裤装</a></li>
+					<li><a href="#">内衣频道</a><a href="#">保暖内衣</a></li>
+				</ul>
+		</div>
+				<div>
+				    <a class="floor-box1-center" href="#"><img src="images/1f-4.jpg"></a>
+				</div>
+				<div class='floor-box-right'>
+					<div class="floor-box1-right1">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-5.jpg' width='199' height='255'></a>
+						<a class='r1-2' href='javascript:void(0);'><img src='images/1f-6.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right2">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-7.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-8.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right3">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-9.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-10.jpg' width='199' height='166'></a>
+					</div>
+				</div>
+	 </div>
+	 <!--  1F 结束 -->
+	 <!-- $ 2F 开始 -->
+	 <div class="floor-box2 floor">
+		 <div class="floor-box2-left">
+				<div class="floor-b2-l1">
+					<a class="mr" href="#">
+					<span class="mrpic"><img src="images/mrpic.jpg"></span>
+					<span class="mrwz">美容护肤</span>
+					</a>
+				</div>
+				<div class="loucengzhanshi">
+					<span class='qian'>&lt;</span>
+					<span class='hou'>&gt;</span>
+		            <div class="louceng">
+						<div class="loucengjihe">
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-2.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-3.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-13.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-15.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-12.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-17.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-2.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-18.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-13.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-3.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-13.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-18.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-2.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-3.jpg'></a>
+							</p>
+						</div>	
+		            </div>
+                </div>
+				<ul class="floor-b2-l3">
+					<li><a href="#">官方直售</a><a href="#">面部护肤</a></li>
+					<li><a href="#">时尚彩妆</a><a href="#">男士护肤</a></li>
+					<li><a href="#">补水面膜</a><a href="#">身体护理</a></li>
+					<li><a href="#">香水</a><a href="#">护肤套装</a></li>
+				</ul>
+		</div>
+				<div>
+					<a class="floor-box2-center" href="#"><img src="images/2f-4.jpg"></a>
+				</div>
+			    <div class='floor-box-right'>
+					<div class="floor-box1-right1">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-5.jpg' width='199' height='255'></a>
+						<a class='r1-2' href='javascript:void(0);'><img src='images/1f-6.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right2">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-7.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-8.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right3">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-9.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-10.jpg' width='199' height='166'></a>
+					</div>
+				</div>
+	 </div>
+	 <!--  2F 结束 -->
+	  <!-- $ 3F 开始 -->
+	 <div class="floor-box3 floor">
+		 <div class="floor-box3-left">
+				<div class="floor-b3-l1">
+					<a class="naz" href="#">
+					<span class="nazpic"><img src="images/nazpic.jpg"></span>
+					<span class="nazwz">男装</span>
+					</a>
+					<div class="line"></div>
+					<a class="nay" href="#">
+					<span class="naypic"><img src="images/naypic.jpg"></span>
+					<span class="naywz">内衣</span>
+					</a>
+				</div>
+				<div class="loucengzhanshi">
+					<span class='qian'>&lt;</span>
+					<span class='hou'>&gt;</span>
+		            <div class="louceng">
+						<div class="loucengjihe">
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/3f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/3f-2.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/3f-3.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-15.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-2.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-17.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/3f-2.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-14.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/3f-3.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-16.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-14.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/3f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/3f-2.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/3f-3.jpg'></a>
+							</p>
+						</div>	
+		            </div>
+                </div>
+				<ul class="floor-b3-l3">
+					<li><a href="#">精品男装</a><a href="#">大牌新品</a></li>
+					<li><a href="#">时尚指南</a><a href="#">轻商务</a></li>
+					<li><a href="#">薄夹克</a><a href="#">休闲裤</a></li>
+					<li><a href="#">男士保暖</a><a href="#">大牌内衣</a></li>
+				</ul>
+		</div>
+				<div>
+					<a class="floor-box3-center" href="#"><img src="images/3f-4.jpg"></a>
+				</div>
+			 	<div class='floor-box-right'>
+					<div class="floor-box1-right1">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-5.jpg' width='199' height='255'></a>
+						<a class='r1-2' href='javascript:void(0);'><img src='images/1f-6.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right2">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-7.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-8.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right3">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-9.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-10.jpg' width='199' height='166'></a>
+					</div>
+				</div>
+	 </div>
+	 <!--  3F 结束 -->
+	 <div class="banner5">
+		 <a href="#">
+			 <img src="images/ba5.jpg">
+		 </a>
+	 </div>
+	  <!-- $ 4F 开始 -->
+	 <div class="floor-box4 floor">
+		 <div class="floor-box4-left">
+				<div class="floor-b4-l1">
+					<a class="nx" href="#">
+					<span class="nxpic"><img src="images/nxpic.jpg"></span>
+					<span class="nxwz">女鞋</span>
+					</a>
+					<a class="nax" href="#">
+					<span class="naxpic"><img src="images/naxpic.jpg"></span>
+					<span class="naxwz">男鞋</span>
+					</a>
+					<a class="xb" href="#">
+					<span class="xbpic"><img src="images/xbpic.jpg"></span>
+					<span class="xbwz">箱包</span>
+					</a>
+				</div>
+				<div class="loucengzhanshi">
+					<span class='qian'>&lt;</span>
+					<span class='hou'>&gt;</span>
+		            <div class="louceng">
+						<div class="loucengjihe">
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/4f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/4f-2.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/4f-3.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/3f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-13.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-17.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-3.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-14.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/3f-1.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/4f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/3f-2.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-3.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-15.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-12.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/4f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/4f-2.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/4f-3.jpg'></a>
+							</p>
+						</div>	
+		            </div>
+                </div>
+				<ul class="floor-b4-l3">
+					<li><a href="#">箱包馆</a><a href="#">女鞋馆</a></li>
+					<li><a href="#">女包</a><a href="#">男鞋馆</a></li>
+					<li><a href="#">拉杆箱</a><a href="#">马丁靴</a></li>
+					<li><a href="#">时尚短靴</a><a href="#">休闲男鞋</a></li>
+				</ul>
+		</div>
+				<div>
+					<a class="floor-box4-center" href="#"><img src="images/4f-4.jpg"></a>
+				</div>
+			    <div class='floor-box-right'>
+					<div class="floor-box1-right1">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-5.jpg' width='199' height='255'></a>
+						<a class='r1-2' href='javascript:void(0);'><img src='images/1f-6.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right2">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-7.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-8.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right3">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-9.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-10.jpg' width='199' height='166'></a>
+					</div>
+				</div>       
+	 </div>
+	 <!--  4F 结束 -->
+	 <!-- $ 5F 开始 -->
+	 <div class="floor-box5 floor">
+		 <div class="floor-box5-left">
+				<div class="floor-b5-l1">
+					<a class="yd" href="#">
+					<span class="ydpic"><img src="images/ydpic.jpg"></span>
+					<span class="ydwz">运动</span>
+					</a>
+					<div class="line"></div>
+					<a class="hw" href="#">
+					<span class="hwpic"><img src="images/hwpic.jpg"></span>
+					<span class="hwwz">户外</span>
+					</a>
+				</div>
+				<div class="loucengzhanshi">
+					<span class='qian'>&lt;</span>
+					<span class='hou'>&gt;</span>
+		            <div class="louceng">
+						<div class="loucengjihe">
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/5f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/5f-2.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/5f-3.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-14.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-1.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/4f-3.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/4f-1.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-14.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-3.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/4f-2.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/5f-3.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/2f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/1f-13.jpg'></a>
+							</p>
+							<p class='loucengtu'>
+							<a class='loucengtupian' href="javascript:void(0);"><img src='images/5f-1.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/5f-2.jpg'></a>
+						 	<a class='loucengtupian' href="javascript:void(0);"><img src='images/5f-3.jpg'></a>
+							</p>
+						</div>	
+		            </div>
+                </div>
+				<ul class="floor-b5-l3">
+					<li><a href="#">运动鞋</a><a href="#">运动服</a></li>
+					<li><a href="#">运动羽绒</a><a href="#">女子专区</a></li>
+					<li><a href="#">户外</a><a href="#">运动用品</a></li>
+					<li><a href="#">自行车</a><a href="#">运动包</a></li>
+				</ul>
+		</div>
+				<div>
+					<a class="floor-box5-center" href="#"><img src="images/5f-4.jpg"></a>
+				</div>
+			 	<div class='floor-box-right'>
+					<div class="floor-box1-right1">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-5.jpg' width='199' height='255'></a>
+						<a class='r1-2' href='javascript:void(0);'><img src='images/1f-6.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right2">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-7.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-8.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right3">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-9.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-10.jpg' width='199' height='166'></a>
+					</div>
+				</div>
+	 </div>
+	 <!--  5F 结束 -->
+	 <!-- $ 6F 开始 -->
+	 <div class="floor-box6 floor">
+		 <div class="floor-box6-left">
+				<div class="floor-b6-l1">
+					<a class="sjsm" href="#">
+					<span class="sjsmpic"><img src="images/sjsmpic.jpg"></span>
+					<span class="sjsmwz">手机数码</span>
+					</a>
+				</div>
+				<ul class="floor-b6-l2">
+					<li><a href="#">大牌影音</a><a href="#">热卖手机</a></li>
+					<li><a href="#">游戏本</a><a href="#">华为荣耀</a></li>
+					<li><a href="#">平板特惠</a><a href="#">小米特供</a></li>
+					<li><a href="#">游戏盛典</a><a href="#">魅族魅蓝</a></li>
+					<li><a href="#">科技新品</a><a href="#">大神F2</a></li>
+					<li><a href="#">发烧酷玩</a><a href="#">iPhone惠</a></li>
+				</ul>
+				<ul class="floor-b6-l3">
+					<li>天猫电器城服务保障</li>
+					<li><a href="#"><img src="images/6f-1.jpg"></a></li>
+					<li><a href="#"><img src="images/6f-2.jpg"></a></li>
+					<li><a href="#"><img src="images/6f-3.jpg"></a></li>
+				</ul>
+		</div>
+				<div>
+					<a class="floor-box6-center" href="#"><img src="images/6f-4.jpg"></a>
+				</div>
+			    <div class='floor-box-right'>
+					<div class="floor-box1-right1">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-5.jpg' width='199' height='255'></a>
+						<a class='r1-2' href='javascript:void(0);'><img src='images/1f-6.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right2">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-7.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-8.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right3">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-9.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-10.jpg' width='199' height='166'></a>
+					</div>
+				</div>      
+	 </div>
+	 <!--  6F 结束 -->
+	 <div class="banner6">
+	 <a href="#"><img src="images/ba6.jpg"></a></div>
+	  <!-- $ 7F 开始 -->
+	 <div class="floor-box7 floor">
+		 <div class="floor-box7-left">
+				<div class="floor-b7-l1">
+					<a class="dq" href="#">
+					<span class="dqpic"><img src="images/dqpic.jpg"></span>
+					<span class="dqwz">家用电器</span>
+					</a>
+				</div>
+				<ul class="floor-b7-l2">
+					<li><a href="#">净享健康</a><a href="#">绝对值</a></li>
+					<li><a href="#">取暖热卖</a><a href="#">洗旧迎新</a></li>
+					<li><a href="#">家用大牌</a><a href="#">年末钜惠</a></li>
+					<li><a href="#">电视特惠</a><a href="#">取暖烘干</a></li>
+					<li><a href="#">烘培狂欢</a><a href="#">暖冬特惠</a></li>
+					<li><a href="#">创意电器</a><a href="#">个人护理</a></li>
+				</ul>
+				<ul class="floor-b7-l3">
+					<li>天猫电器城服务保障</li>
+					<li><a href="#"><img src="images/7f-1.jpg"></a></li>
+					<li><a href="#"><img src="images/7f-2.jpg"></a></li>
+					<li><a href="#"><img src="images/7f-3.jpg"></a></li>
+				</ul>
+		</div>
+				<div>
+					<a class="floor-box7-center" href="#"><img src="images/7f-4.jpg"></a>
+				</div>
+			    <div class='floor-box-right'>
+					<div class="floor-box1-right1">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-5.jpg' width='199' height='255'></a>
+						<a class='r1-2' href='javascript:void(0);'><img src='images/1f-6.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right2">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-7.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-8.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right3">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-9.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-10.jpg' width='199' height='166'></a>
+					</div>
+				</div>
+	 </div>
+	 <!--  7F 结束 -->
+	 <!-- $ 8F 开始 -->
+	 <div class="floor-box8 floor">
+		 <div class="floor-box8-left">
+				<div class="floor-b8-l1">
+					<a class="wj" href="#">
+					<span class="wjpic"><img src="images/wjpic.jpg"></span>
+					<span class="wjwz">母婴/玩具/童装</span>
+					</a>
+				</div>
+				<ul class="floor-b8-l2">
+					<li><a href="#"><img src="images/8f-1.jpg"></a></li>
+					<li><a href="#"><img src="images/8f-2.jpg"></a></li>
+					<li><a href="#"><img src="images/8f-3.jpg"></a></li>
+				</ul>
+				<ul class="floor-b8-l3">
+					<li><a href="#">9元包邮</a><a href="#">奶粉</a></li>
+					<li><a href="#">运动鞋</a><a href="#">纸尿裤</a></li>
+					<li><a href="#">孕妇内衣</a><a href="#">新年玩具</a></li>
+					<li><a href="#">宝宝洗护</a><a href="#">15年春装</a></li>
+				</ul>
+		</div>
+				<div>
+					<a class="floor-box8-center" href="#"><img src="images/8f-4.jpg"></a>
+				</div>
+			     <div class='floor-box-right'>
+					<div class="floor-box1-right1">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-5.jpg' width='199' height='255'></a>
+						<a class='r1-2' href='javascript:void(0);'><img src='images/1f-6.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right2">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-7.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-8.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right3">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-9.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-10.jpg' width='199' height='166'></a>
+					</div>
+				</div>
+	 </div>
+	 <!--  8F 结束 -->
+	 <!-- $ 9F 开始 -->
+	 <div class="floor-box9 floor">
+		 <div class="floor-box9-left">
+				<div class="floor-b9-l1">
+					<a class="sp" href="#">
+					<span class="sppic"><img src="images/sppic.jpg"></span>
+					<span class="spwz">食品</span>
+					</a>
+				</div>
+				<ul class="floor-b7-l2">
+					<li><a href="#">年货礼盒</a><a href="#">零食</a></li>
+					<li><a href="#">进口食品</a><a href="#">红酒</a></li>
+					<li><a href="#">茶叶</a><a href="#">粮油</a></li>
+					<li><a href="#">生鲜</a><a href="#">饮料</a></li>
+					<li><a href="#">巧克力</a><a href="#">进口牛奶</a></li>
+					<li><a href="#">白酒</a><a href="#">车厘子</a></li>
+				</ul>
+				<ul class="floor-b9-l3">
+					<li><a href="#">喵鲜生</a><a href="#">免费试吃</a></li>
+					<li><a href="#">巧克力</a><a href="#">银耳</a></li>
+					<li><a href="#">红枣</a><a href="#">大闸蟹</a></li>
+					<li><a href="#">大红袍</a><a href="#">芒果</a></li>
+				</ul>
+		</div>
+				<div>
+					<a class="floor-box9-center" href="#"><img src="images/9f-1.jpg"></a>
+			 	</div>
+			    <div class='floor-box-right'>
+					<div class="floor-box1-right1">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-5.jpg' width='199' height='255'></a>
+						<a class='r1-2' href='javascript:void(0);'><img src='images/1f-6.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right2">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-7.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-8.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right3">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-9.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-10.jpg' width='199' height='166'></a>
+					</div>
+				</div>
+	 </div>
+	 <!--  9F 结束 -->
+	 <div class="banner7">
+	 <a href="#"><img src="images/ba7.jpg"></a></div>
+	  <!-- $ 10F 开始 -->
+	 <div class="floor-box10 floor">
+		 <div class="floor-box10-left">
+				<div class="floor-b10-l1">
+					<a class="ts" href="#">
+					<span class="tspic"><img src="images/tspic.jpg"></span>
+					<span class="tswz">图书</span>
+					</a>
+				</div>
+				<ul class="floor-b10-l2">
+					<li><a href="#">小说</a><a href="#">科幻</a></li>
+					<li><a href="#">文学</a><a href="#">动漫</a></li>
+					<li><a href="#">传记</a><a href="#">童书</a></li>
+					<li><a href="#">言情</a><a href="#">育儿</a></li>
+					<li><a href="#">悬疑</a><a href="#">绘本</a></li>
+					<li><a href="#">历史</a><a href="#">孕期</a></li>
+				</ul>
+				<ul class="floor-b10-l3">
+					<li><a href="#">美食</a><a href="#">职场</a></li>
+					<li><a href="#">旅行</a><a href="#">管理</a></li>
+					<li><a href="#">生活</a><a href="#">考试</a></li>
+					<li><a href="#">社科</a><a href="#">音像</a></li>
+				</ul>
+		</div>
+				<div>
+					<a class="floor-box10-center" href="#"><img src="images/10f-1.jpg"></a>
+				</div>
+			    <div class='floor-box-right'>
+					<div class="floor-box1-right1">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-5.jpg' width='199' height='255'></a>
+						<a class='r1-2' href='javascript:void(0);'><img src='images/1f-6.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right2">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-7.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-8.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right3">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-9.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-10.jpg' width='199' height='166'></a>
+					</div>
+				</div>
+	 </div>
+	 <!--  10F 结束 -->
+	  <!-- $ 11F 开始 -->
+	 <div class="floor-box11 floor">
+		 <div class="floor-box11-left">
+				<div class="floor-b11-l1">
+					<a class="jz" href="#">
+					<span class="jzpic"><img src="images/jzpic.jpg"></span>
+					<span class="jzwz">家装家纺</span>
+					</a>
+				</div>
+				<ul class="floor-b11-l2">
+					<li><a href="#">热卖家具</a><a href="#">大牌建材</a></li>
+					<li><a href="#">实木家具</a><a href="#">灯具精选</a></li>
+					<li><a href="#">全屋定制</a><a href="#">装修日记</a></li>
+					<li><a href="#">四件套</a><a href="#">蚕丝被</a></li>
+					<li><a href="#">保健枕</a><a href="#">装饰摆件</a></li>
+					<li><a href="#">珠宝配饰</a><a href="#">照片墙</a></li>
+				</ul>
+				<ul class="floor-b11-l3">
+					<li>天猫电器城服务保障</li>
+					<li><a href="#"><img src="images/11f-1.jpg"></a></li>
+					<li><a href="#"><img src="images/11f-2.jpg"></a></li>
+					<li><a href="#"><img src="images/11f-3.jpg"></a></li>
+				</ul>
+		</div>
+				<div>
+					<a class="floor-box11-center" href="#"><img src="images/11f-4.jpg"></a>
+				</div>
+			    <div class='floor-box-right'>
+					<div class="floor-box1-right1">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-5.jpg' width='199' height='255'></a>
+						<a class='r1-2' href='javascript:void(0);'><img src='images/1f-6.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right2">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-7.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-8.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right3">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-9.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-10.jpg' width='199' height='166'></a>
+					</div>
+				</div>
+	 </div>
+	 <!--  11F 结束 -->
+	 <!-- $ 12F 开始 -->
+	 <div class="floor-box12">
+		 <div class="floor-box12-left">
+				<div class="floor-b12-l1">
+					<a class="cs" href="#">
+					<span class="cspic"><img src="images/cspic.jpg"></span>
+					<span class="cswz">超市</span>
+					</a>
+				</div>
+				<ul class="floor-b12-l2">
+					<li><a href="#">进口坚果</a><a href="#">士力架桶</a></li>
+					<li><a href="#">即食麦片</a><a href="#">橄榄油组</a></li>
+					<li><a href="#">伊利金典</a><a href="#">明治夹心</a></li>
+					<li><a href="#">衣物消毒</a><a href="#">黑人牙膏</a></li>
+					<li><a href="#">潘婷洗护</a><a href="#">进口沐浴</a></li>
+					<li><a href="#">洗衣肥皂</a><a href="#">维达卷纸</a></li>
+				</ul>
+				<ul class="floor-b12-l3">
+					<li>天猫电器城服务保障</li>
+					<li><a href="#"><img src="images/12f-1.jpg"></a></li>
+					<li><a href="#"><img src="images/12f-2.jpg"></a></li>
+				</ul>
+		</div>
+				<div>
+					<a class="floor-box12-center" href="#"><img src="images/12f-3.jpg"></a>
+				</div>
+			    <div class='floor-box-right'>
+					<div class="floor-box1-right1">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-5.jpg' width='199' height='255'></a>
+						<a class='r1-2' href='javascript:void(0);'><img src='images/1f-6.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right2">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-7.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-8.jpg' width='199' height='166'></a>
+					</div>
+					<div class="floor-box1-right3">
+						<a class="r1-1" href='javascript:void(0);'><img src='images/1f-9.jpg' width='199' height='255'></a>
+						<a class="r1-2" href='javascript:void(0);'><img src='images/1f-10.jpg' width='199' height='166'></a>
+					</div>
+				</div>
+	 </div>
+	 <!--  12F 结束 -->
+	 <div class="banner8">
+		 <a href="#">
+			 <img src="images/ba8.jpg">
+		 </a>
+	 </div>
+	 <!-- $ 底部 开始 -->
+	 <div class="foot-box">
+		 <div class="foot-box-top">
+			 <ul class="foot-box-top1">
+				 <a class="b1pic" href="#"><img src="images/b1.jpg"></a>
+				 <a class="b2pic" href="#"><img src="images/b2.jpg"></a>
+				 <a class="b3pic" href="#"><img src="images/b3.jpg"></a>
+				 <a class="b4pic" href="#"><img src="images/b4.jpg"></a>
+			 </ul>
+			 <div class="foot-box-top2">
+				 <!-- ****************************************** -->
+				 <ul class="f1">
+				 <span>购物指南</span>
+				 <li><a href="#">免费注册</a></li>
+				 <li><a href="#">开通支付宝</a></li>
+				 <li><a href="#">支付宝充值</a></li>
+				 </ul>
+				 <!-- ****************************************** -->
+				 <ul class="f2">
+				 <span>天猫保障</span>
+				 <li><a href="#">发票保障</a></li>
+				 <li><a href="#">售后规则</a></li>
+				 <li><a href="#">缺货赔付</a></li>
+				 </ul>
+				 <!-- ****************************************** -->
+				 <ul class="f3">
+				 <span>支付方式</span>
+				 <li><a href="#">支付宝快捷支付</a></li>
+				 <li><a href="#">支付宝余额付款</a></li>
+				 <li><a href="#">支付宝钱包付款</a></li>
+				 <li><a href="#">货到付款</a></li>
+				 <li><a href="#">新人支付</a></li>
+				 </ul>
+				 <!-- ****************************************** -->
+				 <ul class="f4">
+				 <span>商家服务</span>
+				 <li><a href="#">商家入驻</a></li>
+				 <li><a href="#">商家中心</a></li>
+				 <li><a href="#">天猫智库</a></li>
+				 <li><a href="#">天猫规则</a></li>
+				 <li><a href="#">物流服务</a></li>
+				 <li><a href="#">喵言喵语</a></li>
+				 <li><a href="#">运营服务</a></li>
+				 </ul>
+				 <!-- ****************************************** -->
+				 <ul class="f5">
+				 <span>手机天猫</span>
+				 <li><a href="#"><img src="images/ewm.jpg"></a></li>
+				 </ul>
+			 </div>
+		 </div>
+		 <div class="foot-box-bottom">
+			 <div class="footer1">
+				 <p class="footer1-top">
+					 <a href="#">关于天猫</a>
+					 <a href="#">帮助中心</a>
+					 <a href="#">诚聘英才</a>
+					 <a href="#">联系我们</a>
+					 <a href="#">网站合作</a>
+					 <a href="#">法律声明</a>
+					 <a href="#">廉正举报</a>
+				 </p>
+				 <p class="footer1-bottom">
+					 <a href="#">阿里巴巴集团</a> | <a href="#">淘宝网</a> | <a href="#">天猫</a> | <a href="#">聚划算</a> | <a href="#">全球速卖通</a> | <a href="#">阿里巴巴国际交易市场</a> | <a href="#">1668</a> | <a href="#">阿里妈妈</a> | <a href="#">阿里旅行·去啊</a> | <a href="#">阿里云计算</a> | <a href="#">YunOS</a> | <a href="#">阿里通信</a> | <a href="#">万网</a> | <a href="#">高德</a> | <a href="#">优视</a> | <a href="#">友盟</a> | <a href="#">天天动听</a> | <a href="#">虾米</a> | <a href="#">来往</a> | <a href="#">钉钉</a> | <a href="#">支付宝</a>
+				 </p>
+			 </div>
+			 <div class="footer2">
+			 <span>增值电信业务经营许可证：
+			 <a href="#">浙B2-20110446</a>
+             </span>
+             互联网医疗保健信息服务 审核同意书 浙 卫网审【2012】6号
+             <br>
+             互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005
+             <b>© 2003-2015 TMALL.COM 版权所有</b>
+			 <p>
+			 <a href="#"><img src="images/bq1.jpg"></a>
+			 <a href="#"><img src="images/bq2.jpg"></a>
+			 </p>
+			 </div>
+	 </div>
+		 </div>
+     <!-- $ 底部 结束 -->
+	 <!--左边 开始-->
+	 <div class="sn-nav-wrapper">
+		 <a class='mui-lift-nav' href="javascript:;">
+			 <img src="images/kind-1.jpg">
+			 <em class="mui-lift-nav-name">
+				 女装
+				 内衣
+			 </em>
+			 <i class="mui-lift-nav-line"></i>
+		 </a>
+		 <a class='mui-lift-nav' href="javascript:;">
+			 <img src="images/kind-2.jpg">
+			 <em class="mui-lift-nav-name ling-name">
+				 美妆
+			 </em>
+			 <i class="mui-lift-nav-line"></i>
+		 </a>
+		 <a class='mui-lift-nav' href="javascript:;">
+			 <img src="images/kind-3.jpg">
+			 <em class="mui-lift-nav-name">
+				 男装
+				 内衣
+			 </em>
+			 <i class="mui-lift-nav-line"></i>
+		 </a>
+		 <a class='mui-lift-nav' href="javascript:;">
+			 <img src="images/kind-4.jpg">
+			 <em class="mui-lift-nav-name ling-name">
+				 鞋包
+			 </em>
+			 <i class="mui-lift-nav-line"></i>
+		 </a>
+		 <a class='mui-lift-nav' href="javascript:;">
+			 <img src="images/kind-5.jpg">
+			 <em class="mui-lift-nav-name">
+				 运动
+				 户外
+			 </em>
+			 <i class="mui-lift-nav-line"></i>
+		 </a>
+		 <a class='mui-lift-nav' href="javascript:;">
+			 <img src="images/kind-6.jpg">
+			 <em class="mui-lift-nav-name">
+				 手机
+				 数码
+			 </em>
+			 <i class="mui-lift-nav-line"></i>
+		 </a>
+		 <a class='mui-lift-nav' href="javascript:;">
+			 <img src="images/kind-7.jpg">
+			 <em class="mui-lift-nav-name">
+				 家用
+				 电器
+			 </em>
+			 <i class="mui-lift-nav-line"></i>
+		 </a>
+		 <a class='mui-lift-nav' href="javascript:;">
+			 <img src="images/kind-8.jpg">
+			 <em class="mui-lift-nav-name ling-name">
+				 母婴
+			 </em>
+			 <i class="mui-lift-nav-line"></i>
+		 </a>
+		 <a class='mui-lift-nav' href="javascript:;">
+			 <img src="images/kind-9.jpg">
+			 <em class="mui-lift-nav-name ling-name">
+				 食品
+			 </em>
+			 <i class="mui-lift-nav-line"></i>
+		 </a>
+		 <a class='mui-lift-nav' href="javascript:;">
+			 <img src="images/kind-10.jpg">
+			 <em class="mui-lift-nav-name ling-name">
+				 图书
+			 </em>
+			 <i class="mui-lift-nav-line"></i>
+		 </a>
+		 <a class='mui-lift-nav' href="javascript:;">
+			 <img src="images/kind-11.jpg">
+			 <em class="mui-lift-nav-name">
+				 家装
+				 家纺
+			 </em>
+			 <i class="mui-lift-nav-line"></i>
+		 </a>
+	 </div>
+	 <!--左边 结束-->
+	 <!--右边 开始-->
+	 <div class="mui-mbar-tabs">
+		 <div class="mui-mbar-tab">
+			 <div class="mui-mbar-tab-logo r1"></div>
+			 <div class="mui-mbar-tab-tip">
+				 我的特权
+				 <div class='mui-mbar-arr mui-mbar-tab-tip-arr'>◆</div>
+			 </div>
+		 </div>
+		 <div class='mui-mbar-tab-cart'>
+			 <div class="mui-mbar-tab-logo r2"></div>
+			 <div class="mui-mbar-tab-txt">购物车</div>
+		 </div>
+		 <div class="mui-mbar-tab ling">
+			 <div class="mui-mbar-tab-logo r3"></div>
+			 <div class="mui-mbar-tab-tip">
+				 我的资产
+				 <div class='mui-mbar-arr mui-mbar-tab-tip-arr'>◆</div>
+			 </div>
+		 </div>
+		 <div class="mui-mbar-tab ling">
+			 <div class="mui-mbar-tab-logo r4"></div>
+			 <div class="mui-mbar-tab-tip">
+				 我关注的品牌
+				 <div class='mui-mbar-arr mui-mbar-tab-tip-arr'>◆</div>
+			 </div>
+		 </div>
+		 <div class="mui-mbar-tab ling">
+			 <div class="mui-mbar-tab-logo r5"></div>
+			 <div class="mui-mbar-tab-tip">
+				 我的收藏
+				 <div class='mui-mbar-arr mui-mbar-tab-tip-arr'>◆</div>
+			 </div>
+		 </div>
+		 <div class="mui-mbar-tab ling">
+			 <div class="mui-mbar-tab-logo r6"></div>
+			 <div class="mui-mbar-tab-tip">
+				 我看过的
+				 <div class='mui-mbar-arr mui-mbar-tab-tip-arr'>◆</div>
+			 </div>
+		 </div>
+		 <div class="mui-mbar-tab ling">
+			 <div class="mui-mbar-tab-logo r7"></div>
+			 <div class="mui-mbar-tab-tip">
+				 我要充值
+				 <div class='mui-mbar-arr mui-mbar-tab-tip-arr'>◆</div>
+			 </div>
+		 </div>
+		 <div class="mui-mbar-tab ling2">
+			 <div class="mui-mbar-tab-logo r8"></div>
+			 <div class="mui-mbar-tab-tip">
+				 用户反馈
+			 </div>
+		 </div>
+		 <div class="mui-mbar-tab ling">
+			 <div class="mui-mbar-tab-logo r9"></div>
+			 <div class="mui-mbarp-qrcode mui-mbar-tab-tip">
+				 <div class="mui-mbarp-qrcode-tip">
+					 <div class="ewm"><img src="images/ewm.png"></div>
+					 <div class="ewm-detail">
+						 <img src="images/ewm1.png">
+					 </div>
+				 </div>
+				 <div class='mui-mbar-arr mui-mbarp-qrcode-arr'>◆</div>
+			 </div>
+		 </div>
+		 <div class="mui-mbar-tab ling return">
+			 <div class="mui-mbar-tab-logo r10"></div>
+			 <div class="mui-mbar-tab-tip">
+				 返回顶部
+				 <div class='mui-mbar-arr mui-mbar-tab-tip-arr'>◆</div>
+			 </div>
+		 </div>
+	 </div>
+	 <!--右边 结束-->
+	 <!--搜索框 开始-->
+	<div class="title-search">
+	 <div class="title-search-inner">
+		 <div><img src="images/logo2.jpg"></div>
+		 <div class="input-search"><input type="text" value="一样的吃货！不一样的年货大礼包！"></div>
+		 <a class="searchpic" href="#"><img src="images/search2.jpg"></a>
+	 </div>
+ </div>
+     <!--搜索框 结束-->
+ </body>
+</html>
